@@ -1,0 +1,129 @@
+﻿body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.auto-style1 {
+    margin-bottom: 0px;
+}
+
+.login-forms {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+}
+
+.login, .signin {
+    display: inline-block;
+    min-height: 50%;
+    padding: 10px 20px;
+    margin: auto 0;
+    background-color: white;
+    border-radius: 12px;
+    min-width: 370px;
+    display: flex;
+    flex-direction: column
+}
+
+    .login div, .signin div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+.login-forms h3 {
+    text-align: center;
+    color: #F39C12;
+    font-size: 25px;
+    margin: 5px 0px 15px 5px;
+    letter-spacing: 1.2px;
+}
+
+.inp-label {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #99A3A4;
+}
+
+.login-forms input {
+    outline: none;
+    min-width: 170px;
+    padding: 7px 15px;
+    border: 1px solid rgba(0,0,0, 0.15);
+    border-radius: 8px;
+    margin: 30px 0 15px 0;
+    top: 35px;
+    color: #283747;
+}
+
+    .login-forms input:focus {
+        border: 1px solid #f48982;
+    }
+
+
+    .login-forms input:valid ~ .inp-label {
+        top: 0;
+        color: #283747;
+    }
+
+@keyframes input-foc {
+    0% {
+        top: 35px;
+        color: #99A3A4;
+    }
+
+    100% {
+    }
+}
+
+
+.login span {
+    color: #99A3A4;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.login select {
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0, 0.15);
+    margin-bottom: 15px;
+}
+
+.login-forms .sumbit-btn {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 8px 0px;
+    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.15);
+}
+
+    .login-forms .sumbit-btn:hover {
+        transform: scale(1.1) translateY(-3px);
+        box-shadow: 0 2px 13px rgba(0,0,0, 0.25);
+        backface-visibility: hidden;
+    }
+
+.back-to-hom {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #f48982;
+    font-weight: 500;
+}
+
+#Button1 {
+    text-decoration: none;
+    color: orange;
+    border: none;
+    background: none;
+    font-size: large;
+    
+}
